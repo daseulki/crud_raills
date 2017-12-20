@@ -1,0 +1,17 @@
+<form action="/user/configuser" method="post">
+  <div class="form-group">
+    <label for="exampleFormControlInput0">이메일</label>
+    <input type="email" class="form-control"  name="email">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">비밀번호</label>
+    <input type="password" class="form-control"  name="password">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput2">비밀번호 확인</label>
+    <input type="password" class="form-control"  name="pwdconfig">
+  </div>
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+  <button type="submit" class="btn btn-primary">가입하기</button>
+</form>
